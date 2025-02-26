@@ -1,0 +1,926 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Lato", serif;
+  list-style: none;
+}
+
+.box {
+  margin: 0;
+}
+/* =================================== Header section ================================ */
+header {
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: sticky;
+  background-color: #000;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  color: black;
+  background-color: white;
+  transition: 0.8s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-block: 15px;
+  top: 100%;
+  border-radius: 5px;
+  background-color: rgb(243, 22, 22);
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown.content {
+  display: block;
+}
+
+.nav-icons {
+  display: flex;
+  text-align: center;
+}
+
+.nav-icons .bx {
+  width: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-icons .bx-search:hover {
+  background-color: rgb(209, 44, 44);
+  transition: 0.8s;
+  border-radius: 3px;
+}
+
+.nav-icons span {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-icons .bx-menu {
+  display: none;
+}
+
+/* ====================================== Main background ====================================== */
+.main-bg-img {
+  position: relative;
+}
+
+.main-bg-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: whitesmoke;
+}
+
+.overlay h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.overlay h2 {
+  font-size: 15px;
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+/* ===================================== Band section ====================================== */
+.band-container {
+  padding: 80px 0;
+}
+
+.band-content h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.band-content h4 {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.band-content p {
+  text-align: justify;
+  width: fit-content;
+}
+
+.band-card-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.band-card {
+  padding: 50px;
+}
+
+.band-card img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.band-card:hover {
+  background-color: rgb(231, 235, 233);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+/* ================================== Tour section ======================================= */
+.tour-container {
+  padding: 80px 0;
+  background-color: black;
+  color: white;
+}
+
+.tour-headings h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.tour-headings h4 {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  color: rgb(117, 107, 107);
+}
+
+.months {
+  margin-top: 40px;
+}
+
+.months ul {
+  background-color: whitesmoke;
+  color: rgb(95, 84, 84);
+  text-align: left;
+}
+
+.months ul li {
+  padding: 15px 10px;
+  border: 1px solid rgb(146, 143, 143);
+}
+
+.months ul li:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.months ul span {
+  margin-left: 25px;
+  padding: 5px;
+  border-radius: 3px;
+  color: whitesmoke;
+  background-color: red;
+}
+
+.months ul li:last-child .tickets {
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: black;
+}
+
+.tour-card-div {
+  display: flex;
+  margin: 30px 0 100px 0;
+  justify-content: space-between;
+}
+
+.tour-card {
+  background-color: whitesmoke;
+  color: black;
+  width: 250px;
+  height: 420px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.tour-card img {
+  border-radius: 5px 5px 0 0;
+  width: 250px;
+  height: 200px;
+}
+
+.tour-card img:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.tour-card-content {
+  padding: 20px;
+}
+
+.tour-card-content h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tour-card-content p:nth-of-type(1) {
+  color: rgb(117, 110, 110);
+  margin-top: 15px;
+}
+
+.tour-card-content p:nth-of-type(2) {
+  margin: 20px 0 30px 0;
+}
+
+.tour-card-content a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tour-card-content a:hover {
+  color: black;
+  background-color: rgb(121, 126, 131);
+  transition: 0.4s;
+}
+
+/* ================================== Contact section ==================================== */
+.contact-container {
+  margin: 100px 0;
+}
+
+.contact-headings h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.contact-headings h4 {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: rgb(117, 107, 107);
+}
+
+.address-form {
+  margin: 50px 0 150px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-form address {
+  text-align: left;
+  font-size: 22px;
+  line-height: 30px;
+  color: rgb(41, 38, 38);
+}
+
+.address-form address i {
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.address-form form {
+  text-align: left;
+  position: relative;
+}
+
+.address-form form input {
+  padding: 12px;
+  width: 220px;
+  border: 1px solid rgb(102, 99, 99);
+  border-radius: 3px;
+}
+
+.address-form form input::placeholder {
+  font-size: 16px;
+}
+
+.address-form form .message {
+  margin-top: 5px;
+  width: 444px;
+}
+
+.address-form form i {
+  color: red;
+  position: absolute;
+  left: 92%;
+  top: 10px;
+}
+
+.address-form form button {
+  padding: 9px 25px;
+  margin: 15px 0 0 0;
+  position: relative;
+  font-size: 16px;
+  left: 79%;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.address-form form button:hover {
+  color: black;
+  background-color: rgb(121, 126, 131);
+  transition: 0.8s;
+}
+
+/* ==================================== Footer section ================================ */
+.footer-container .map img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-container .social {
+  margin: 130px 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 28px;
+  color: rgb(78, 66, 66);
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50%;
+  word-spacing: 5px;
+}
+
+.social-icons i:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: rgb(78, 66, 66);
+}
+
+.footer-container .social p {
+  margin-top: 20px;
+  color: rgb(78, 66, 66);
+}
+
+.footer-container .social p a {
+  color: rgb(78, 66, 66);
+}
+
+/* ================================= Media query section ================================= */
+
+@media (max-width: 1024px) {
+  /* Tablets & Small Laptops (768px - 1024px) */
+  .container {
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* ----------- Header ------------ */
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    text-align: center;
+    min-width: 500px;
+    height: 60px;
+  }
+
+  nav ul li {
+    padding: 20px;
+
+    a {
+      padding: 20px 100px;
+    }
+  }
+
+  nav .dropdown-content {
+    left: 110px;
+
+    a {
+      padding: 10px 20px;
+    }
+  }
+
+  nav .nav-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .nav-icons .bx:hover {
+    background-color: rgb(209, 44, 44);
+    transition: 0.8s;
+    border-radius: 3px;
+  }
+
+  .nav-icons .bx-menu {
+    display: block;
+  }
+
+  .overlay h2 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* ----------- Band -------------- */
+  .band-container .band-content {
+    h3 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .band-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* ---------- Tour ----------- */
+  .tour-headings {
+    h3 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .tour-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+
+    .tour-card {
+      margin: 50px 0;
+      width: 230px;
+      height: 420px;
+    }
+
+    .tour-card img {
+      width: 230px;
+    }
+  }
+
+  /* ----------- Contact ------------- */
+  .contact-container {
+    .contact-headings {
+      h3 {
+        font-size: 26px;
+      }
+
+      h4 {
+        font-size: 14px;
+      }
+    }
+
+    .address-form {
+      address {
+        font-size: 18px;
+      }
+
+      form {
+        text-align: right;
+
+        input {
+          width: 180px;
+        }
+
+        input::placeholder {
+          font-size: 14px;
+        }
+
+        .message {
+          width: 363px;
+        }
+
+        button {
+          left: 0.1%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* Large Mobile Devices (481px - 767px) */
+  .container {
+    max-width: 400px;
+  }
+
+  nav {
+    height: 50px;
+
+    ul li {
+      margin-left: -100px;
+      line-height: 5px;
+    }
+  }
+
+  nav ul li a {
+    font-size: 10px;
+    padding: 10px 50px;
+  }
+
+  nav .nav-icons {
+    font-size: 16px;
+  }
+
+  .overlay {
+    h1 {
+      margin-top: -10px;
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 10px;
+      margin-top: 2px;
+    }
+  }
+
+  .band-container .band-content {
+    h3 {
+      font-size: 22px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .band-card-div {
+    .band-card p {
+      font-size: 12px;
+    }
+
+    .band-card img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .tour-headings {
+    h3 {
+      font-size: 22px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .months ul li {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .tour-card-div {
+    .tour-card {
+      height: 340px;
+
+      img {
+        height: 150px;
+      }
+
+      h6 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      a {
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .contact-container {
+    .contact-headings {
+      h3 {
+        font-size: 22px;
+      }
+
+      h4 {
+        font-size: 12px;
+        margin-bottom: -20px;
+      }
+    }
+  }
+
+  .address-form {
+    flex-direction: column;
+
+    address {
+      i .fa-map-marker {
+        font-size: 12px;
+      }
+
+      i {
+        font-size: 12px;
+        margin-right: 0;
+      }
+
+      p {
+        font-size: 13px;
+        margin-left: 32%;
+      }
+    }
+
+    form {
+      margin: 40px 0 -50px 0;
+      padding: 0 18px;
+
+      input {
+        padding: 8px;
+      }
+
+      .bx-lock {
+        margin-left: -10px;
+      }
+
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .social-icons {
+    gap: 1px;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  .social p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small Mobile Devices (480px and below) */
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 200px;
+  }
+
+  nav {
+    padding: 1px;
+  }
+
+  nav .nav-icons {
+    font-size: 12px;
+  }
+
+  .overlay {
+    h1 {
+      margin-top: -10px;
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 6px;
+      margin-top: 5px;
+    }
+  }
+
+  .band-container {
+    margin: 0;
+  }
+
+  .band-container .band-content {
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 10px;
+    }
+
+    p {
+      font-size: 9px;
+      margin-bottom: -10px;
+    }
+  }
+
+  .band-container .band-card {
+    padding: 20px;
+  }
+
+  .tour-headings {
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 8px;
+    }
+  }
+
+  .months {
+    ul li {
+      font-size: 7px;
+      padding: 8px;
+
+      span {
+        margin-left: 3px;
+        padding: 4px;
+      }
+    }
+  }
+
+  .months ul li:last-child .tickets {
+    font-size: 6px;
+    width: 18px;
+    height: 16px;
+    margin-top: -4px;
+  }
+
+  .tour-card-div .tour-card {
+    width: 200px;
+    height: 260px;
+
+    .tour-card-content {
+      h6 {
+        margin-top: -10px;
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 9px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-size: 9px;
+        padding: 8px;
+      }
+    }
+
+    img {
+      width: 200px;
+      height: 120px;
+    }
+  }
+
+  .contact-container .contact-headings {
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 8px;
+    }
+  }
+
+  .address-form {
+    address {
+      i {
+        font-size: 8px;
+        margin-right: -2px;
+      }
+
+      p {
+        font-size: 9px;
+        margin-left: 22%;
+        line-height: 20px;
+      }
+    }
+
+    form {
+      margin-top: 10px;
+      input {
+        padding: 3px;
+        margin-top: 15px;
+      }
+
+      input::placeholder {
+        font-size: 7px;
+      }
+
+      .bx-lock {
+        font-size: 11px;
+        margin-top: 12px;
+        margin-left: -1px;
+      }
+
+      button {
+        font-size: 9px;
+        margin-left: 65%;
+      }
+    }
+  }
+
+  .address-form form:nth-child(2) .message {
+    margin-top: -50px;
+    width: 180px;
+  }
+
+  .footer-container .social {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .social-icons {
+    i {
+      font-size: 12px;
+    }
+  }
+
+  .social p {
+    font-size: 9px;
+  }
+}

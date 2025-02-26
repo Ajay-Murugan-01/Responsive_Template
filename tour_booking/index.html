@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------------------------------- Header ------------------------------------>
+    <header>
+      <section class="header-container">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-btn">
+                More
+                <i class="bx bxs-down-arrow" style="font-size: 10px"></i>
+              </a>
+
+              <div class="dropdown-content">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="nav-icons">
+            <span><i class="bx bx-menu"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <!---------------------------- Main background section ---------------------------->
+      <section class="mainbg-container" id="home">
+        <div class="main-bg-img">
+          <img src="images/losangels.jpg" alt="Los Angels" />
+          <div class="overlay">
+            <h1>Los Angeles</h1>
+            <h2>We had the best time playing at Venice Beach!</h2>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------- Band section ------------------------------------->
+      <section class="container" id="band">
+        <div class="band-container">
+          <div class="band-content">
+            <h3>The Band</h3>
+            <h4>We love music</h4>
+            <p>
+              We have created a fictional band website. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div class="band-card-div">
+            <div class="band-card">
+              <p>Name</p>
+              <img src="images/bandmember.jpg" alt="" />
+            </div>
+
+            <div class="band-card">
+              <p>Name</p>
+              <img src="images/bandmember.jpg" alt="" />
+            </div>
+
+            <div class="band-card">
+              <p>Name</p>
+              <img src="images/bandmember.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------- Tour section ------------------------------------->
+      <section class="tour-container" id="tour">
+        <div class="container">
+          <div class="tour-headings">
+            <h3>Tour Dates</h3>
+            <h4>Remember to book your tickets!</h4>
+          </div>
+
+          <div class="months">
+            <ul>
+              <li>September <span>Sold out</span></li>
+              <li>October <span>Sold out</span></li>
+              <li>November <span class="tickets">3</span></li>
+            </ul>
+          </div>
+
+          <div class="tour-card-div">
+            <div class="tour-card">
+              <img src="images/newyork.jpg" alt="new york" />
+              <div class="tour-card-content">
+                <h6>New York</h6>
+                <p>Fri 27 Nov 2016</p>
+                <p>Present tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+              </div>
+            </div>
+
+            <div class="tour-card">
+              <img src="images/paris.jpg" alt="paris" />
+              <div class="tour-card-content">
+                <h6>Paris</h6>
+                <p>Sat 28 Nov 2016</p>
+                <p>Present tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+              </div>
+            </div>
+
+            <div class="tour-card">
+              <img src="images/sanfran.jpg" alt="san francisco" />
+              <div class="tour-card-content">
+                <h6>San Francisco</h6>
+                <p>Sun 29 Nov 2016</p>
+                <p>Present tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------- Contact section ---------------------------------->
+      <section class="container" id="contact">
+        <div class="contact-container">
+          <div class="contact-headings">
+            <h3>Contact</h3>
+            <h4>Fan? Drop a note!</h4>
+          </div>
+
+          <div class="address-form">
+            <address>
+              <p>
+                <i class="fa fa-map-marker"></i>
+                <!-- style="font-size: 20px;" -->
+                Chicago, US
+              </p>
+              <p>
+                <i class="bx bxs-phone"></i>
+                Phone: +00 151515
+              </p>
+              <p>
+                <i class="bx bxs-envelope"></i>
+                Email: mail@mail.com
+              </p>
+            </address>
+
+            <form>
+              <input class="name" type="text" placeholder="Name" required />
+              <input class="mail" type="email" placeholder="Email" required />
+              <i class="bx bx-lock"></i><br />
+              <input
+                class="message"
+                type="text"
+                placeholder="Message"
+                required
+              /><br />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------------------------ Footer section -------------------------------------->
+    <footer>
+      <section class="footer-container">
+        <div class="map">
+          <img src="images/map.jpg" alt="Map" />
+        </div>
+
+        <div class="social container">
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-snapchat"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+          </ul>
+
+          <p>Powered by <a href="#">w3.css</a></p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      // Dropdown Content
+      const dropdownBtn = document.querySelector(".dropdown-btn");
+      const dropdownContent = document.querySelector(".dropdown-content");
+
+      dropdownBtn.onclick = function (e) {
+        e.preventDefault();
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+      };
+
+      document.onclick = function (e) {
+        if (
+          !dropdownBtn.contains(e.target) &&
+          !dropdownContent.contains(e.target)
+        ) {
+          dropdownContent.style.display = "none";
+        }
+      };
+
+      // Menu Icon
+
+      // Get the necessary elements from the DOM
+      const menuIcon = document.querySelector(".bx-menu");
+      const navUl = document.querySelector("nav ul");
+      const nav = document.querySelector("nav");
+      const navLinks = navUl.querySelectorAll("li"); // Select all list items
+
+      // Function to toggle the navigation menu
+      function toggleMenu() {
+        if (navUl.style.display === "block") {
+          // Hide the menu and reset nav height
+          navUl.style.display = "none";
+          nav.style.height = "auto";
+        } else {
+          // Show the menu and adjust nav height
+          navUl.style.display = "block";
+
+          // Calculate the height of the visible list items
+          let visibleHeight = 0;
+          for (let i = 0; i < navLinks.length; i++) {
+            visibleHeight += navLinks[i].offsetHeight;
+          }
+
+          nav.style.height = `${visibleHeight + 20}px`; // Adjust nav height to fit content, add 20px padding.
+        }
+      }
+
+      // Attach the toggleMenu function to the click event of the menu icon
+      menuIcon.addEventListener("click", toggleMenu);
+
+      // Function to handle clicks outside the menu when it's open
+      function handleClickOutside(event) {
+        if (
+          navUl.style.display === "block" &&
+          !nav.contains(event.target) &&
+          event.target !== menuIcon
+        ) {
+          navUl.style.display = "none";
+          nav.style.height = "auto";
+        }
+      }
+
+      // Add event listener to the document for clicks outside the menu
+      document.addEventListener("click", handleClickOutside);
+
+      // // Get the necessary elements from the DOM
+      // const menuIcon = document.querySelector('.bx-menu');
+      // const navUl = document.querySelector('nav ul');
+      // const nav = document.querySelector('nav');
+
+      // // Function to toggle the navigation menu
+      // function toggleMenu() {
+      //     // Check if the navigation menu is currently visible
+      //     if (navUl.style.display === 'block') {
+      //         // If it's visible, hide it and reset the nav height
+      //         navUl.style.display = 'none';
+      //         nav.style.height = 'auto'; // Reset height to auto
+      //     } else {
+      //         // If it's hidden, show it and adjust the nav height
+      //         navUl.style.display = 'block';
+      //         nav.style.height = 'auto'; // Adjust height to fit content
+      //     }
+      // }
+
+      // // Attach the toggleMenu function to the click event of the menu icon
+      // menuIcon.addEventListener('click', toggleMenu);
+
+      // // Function to handle clicks outside the menu when it's open
+      // function handleClickOutside(event) {
+      //     if (navUl.style.display === 'block' && !nav.contains(event.target) && event.target !== menuIcon) {
+      //         navUl.style.display = 'none';
+      //         nav.style.height = 'auto';
+      //     }
+      // }
+
+      // // Add event listener to the document for clicks outside the menu
+      // document.addEventListener('click', handleClickOutside);
+
+      // const menuIcon = document.querySelector('.bx-menu');
+      // const navList = document.querySelector('nav ul');
+      // const nav = document.querySelector('nav'); // Select the nav element
+
+      // menuIcon.addEventListener('click', function() {
+      // if (navList.style.display === 'block') {
+      //     navList.style.display = 'none';
+      //     nav.style.height = 'auto'; // Reset nav height
+      //     nav.style.width = 'auto'; // Reset nav width
+      // } else {
+      //     navList.style.display = 'block';
+      //     // Calculate the height of the navList and set the nav height
+      //     const navListHeight = navList.offsetHeight;
+      //     nav.style.height = `${navListHeight + 20}px`; // Add some padding
+      //     nav.style.width = '100%'; //set nav width to 100%
+      // }
+      // });
+
+      // //Initial nav height and width
+      // window.addEventListener('load', function(){
+      //     nav.style.height = 'auto';
+      //     nav.style.width = '100%';
+      // });
+    </script>
+  </body>
+</html>
